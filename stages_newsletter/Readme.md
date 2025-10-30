@@ -1,4 +1,4 @@
-## 🛜 Notification Quotidienne des Dernières Offres d'Emploi Ciblées 🛜
+## Template n8n : Notification Quotidienne des Dernières Offres d'Emploi Ciblées 🛜
 
 🌟 **Aperçu** : Ne manquez plus jamais une offre d'emploi ! Ce workflow n8n automatise la collecte quotidienne d'offres d'emploi sur LinkedIn, Indeed, Welcome to the Jungle et d'autres plateformes, en utilisant Google Dorks et SerpAPI. Il filtre les offres avec un agent IA Gemini, les stocke dans Google Sheets et envoie une newsletter HTML élégante directement dans votre boîte mail ou à vos abonnés — le tout gérable depuis votre téléphone !
 
@@ -26,3 +26,26 @@
 🔗 **Créateur** : Louis Delahaye | [n8n.io/creators/louisdl](https://n8n.io/creators/louisdl/)
 🎥 YouTube : [@cash-routine](https://www.youtube.com/@cash-routine)
 Mon Agence IA : [agence-alain.fr](https://agence-alain.fr)
+
+--- 
+
+## Tu ne possèdes pas n8n ? Tu ne veux pas t'embêter avec le workflow 
+### **S’abonner à la Newsletter Live (€9,99/mois – 1 semaine GRATUITE)**  
+**Zéro config** – reçois **chaque matin** les meilleures offres filtrées par IA.  
+👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)  
+
+---
+
+### **Voir la Démo Complète sur YouTube**  
+👉 [https://youtu.be/dMFFVp0DcII](https://youtu.be/dMFFVp0DcII)  
+
+*(Abonne-toi + 🔔 pour les prochaines automatisations IA !)*
+
+---
+
+**Prochaines étapes :**  
+1. Choisis **Workflow** OU **Newsletter** (ou les deux !)  
+2. Reçois tes offres dès demain matin  
+3. **Postule en premier, décroche le stage de tes rêves** 💼✨
+
+*Questions ? Telegram :* [t.me/+pfPxNZdQj_9jYjU0](https://t.me/+pfPxNZdQj_9jYjU0)
