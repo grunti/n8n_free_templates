@@ -7,12 +7,12 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 ## 🚀 **Pas envie de t’embêter avec n8n ?**  
 - **Tu ne souhaites pas payer ou tu ne maîtrises pas l’outil ?**  
-  → **Abonne-toi à ma newsletter live « Stages Finance »** : **€9,99 / mois** (1 semaine **GRATUITE**)  
+  → **Abonne-toi à ma newsletter live « Stages Finance »** : **€9,99 / mois** (1 semaine **gratuite**)  
   👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)
 
 - **Tu veux la même newsletter, mais 100 % sur-mesure pour ton cas perso ?**  
-  → **Je la développe pour toi** : **€39,99 / mois** (1 semaine **GRATUITE**)  
-  *Contacte-moi sur Telegram ou par mail → cashflows.routine@gmail.com*
+  → **Je la développe pour toi** : **€39,99 / mois** (1 semaine **gratuite**)
+  👉 [https://cashroutine.gumroad.com/l/internship-alert]([https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert?option=EZ863YfdUxjzZcbFtp89RQ%3D%3D))
 
 ---
 
