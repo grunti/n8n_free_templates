@@ -1,5 +1,4 @@
 {
-  "name": "copy🛜 Daily Notification on Latest Job Offers 🛜",
   "nodes": [
     {
       "parameters": {
@@ -705,13 +704,13 @@
     {
       "parameters": {
         "content": "## SerpAPI\nWe use SerpAPI tool which enables us to retrieve structured information from a google web request\n\nSee: https://serpapi.com",
-        "height": 304,
+        "height": 256,
         "width": 496
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
         -432,
-        -208
+        -160
       ],
       "typeVersion": 1,
       "id": "0e0e5067-d466-4415-a581-ead1cdc2d0ad",
@@ -764,104 +763,6 @@
     },
     {
       "parameters": {
-        "documentId": {
-          "__rl": true,
-          "value": "1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4",
-          "mode": "list",
-          "cachedResultName": "Offres emplois n8n",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4/edit?usp=drivesdk"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "gid=0",
-          "mode": "list",
-          "cachedResultName": "Base des offres",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4/edit#gid=0"
-        },
-        "filtersUI": {
-          "values": [
-            {
-              "lookupColumn": "Com mail",
-              "lookupValue": "Non envoyé"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4.7,
-      "position": [
-        -640,
-        1056
-      ],
-      "id": "13cb4159-2de9-4f4b-821b-32632a646c29",
-      "name": "Get row(s) in sheet3",
-      "executeOnce": true,
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "kplIavU6Ix016UIY",
-          "name": "Google Sheets account Louis"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "fieldsToAggregate": {
-          "fieldToAggregate": [
-            {
-              "fieldToAggregate": "link"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.aggregate",
-      "typeVersion": 1,
-      "position": [
-        -416,
-        1056
-      ],
-      "id": "afc14c62-4d59-4751-a4a7-3a867bff9148",
-      "name": "Aggregate"
-    },
-    {
-      "parameters": {
-        "toRecipients": "cashflows.routine@gmail.com",
-        "subject": "Les offres de stages du jour 🦈",
-        "bodyContent": "=📌 Voici les offres de stages du jour : \n{{ $json.link.join('\\n\\n') }}",
-        "additionalFields": {}
-      },
-      "type": "n8n-nodes-base.microsoftOutlook",
-      "typeVersion": 2,
-      "position": [
-        -192,
-        1056
-      ],
-      "id": "81b04bd5-0ca2-44b5-ae7e-3094274050f7",
-      "name": "Send a message1",
-      "webhookId": "270c33b5-76bc-48d4-a886-6060e00b025b",
-      "credentials": {
-        "microsoftOutlookOAuth2Api": {
-          "id": "VXNsvvPTaEUolGT4",
-          "name": "Microsoft Outlook account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "inputSource": "passthrough"
-      },
-      "type": "n8n-nodes-base.executeWorkflowTrigger",
-      "typeVersion": 1.1,
-      "position": [
-        -848,
-        1056
-      ],
-      "id": "bea15535-54e9-4c9d-a9d5-390682bce061",
-      "name": "When Executed by Another Workflow"
-    },
-    {
-      "parameters": {
         "workflowId": {
           "__rl": true,
           "value": "ASPeDfPFDgXLvGwH",
@@ -890,6 +791,93 @@
       "id": "82ec6d0c-fe99-4abc-bafc-8a5a1225597f",
       "name": "Call 'copy'",
       "executeOnce": true
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -832,
+        1248
+      ],
+      "id": "bea15535-54e9-4c9d-a9d5-390682bce061",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "content": "## Executes when the previous is over\n- Gets the newly added mail sonly\n- Aggregates them into 1 item\n- Send an email with the weblinks\n- Updates the database items to \"sent\"",
+        "height": 240,
+        "width": 304
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -1184,
+        1136
+      ],
+      "typeVersion": 1,
+      "id": "7b96e137-be19-4b0e-9b3c-5f02e22431a7",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "toRecipients": "=Louis.delahaye@hotmail.fr",
+        "subject": "🦈 Les offres de stages du jour 🦈",
+        "bodyContent": "={{ $json.html }}",
+        "additionalFields": {
+          "bodyContentType": "html"
+        }
+      },
+      "type": "n8n-nodes-base.microsoftOutlook",
+      "typeVersion": 2,
+      "position": [
+        64,
+        1152
+      ],
+      "id": "ee22cb2f-54b1-4345-a955-795be6df8bcd",
+      "name": "Send a message",
+      "webhookId": "f4f1cca8-7d1b-48c0-adf4-72489ad69dec",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "VXNsvvPTaEUolGT4",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sortFieldsUi": {
+          "sortField": [
+            {
+              "fieldName": "date",
+              "order": "descending"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.sort",
+      "typeVersion": 1,
+      "position": [
+        -384,
+        1152
+      ],
+      "id": "106737a7-ad45-4920-b3e1-adae4ca69d45",
+      "name": "Sort"
+    },
+    {
+      "parameters": {
+        "jsCode": "// n8n Function node – VERSION SIMPLE : Titre + URL + Source + Date\nconst jobs = items.map(item => {\n  const {\n    title = '',\n    link = '',\n    source = '',\n    date = ''\n  } = item.json;\n\n  const parts = [title];\n  if (source) parts.push(source);\n  if (date) parts.push(date);\n\n  return `<p><a href=\"${link}\" target=\"_blank\">${title}</a><br>${source ? `- ${source}` : ''}${source && date ? ' ' : ''}${date ? `- ${date}` : ''}</p>`;\n}).join('\\n');\n\nconst html = `<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Offres de Stage</title>\n</head>\n<body>\n${jobs}\n</body>\n</html>`;\n\nreturn [{ json: { html } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -160,
+        1152
+      ],
+      "id": "80166eb4-c5e6-4267-b896-7b1d37ab02db",
+      "name": "Code in JavaScript"
     },
     {
       "parameters": {
@@ -1027,8 +1015,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        -368,
-        1248
+        -384,
+        1344
       ],
       "id": "38ef1e85-1243-40fb-be36-5f26b93bb8eb",
       "name": "Update row in sheet",
@@ -1038,27 +1026,50 @@
           "name": "Google Sheets account Louis"
         }
       }
-    }
-  ],
-  "pinData": {
-    "Schedule Trigger": [
-      {
-        "json": {
-          "timestamp": "2025-10-16T07:00:45.055+02:00",
-          "Readable date": "October 16th 2025, 7:00:45 am",
-          "Readable time": "7:00:45 am",
-          "Day of week": "Thursday",
-          "Year": "2025",
-          "Month": "October",
-          "Day of month": "16",
-          "Hour": "07",
-          "Minute": "00",
-          "Second": "45",
-          "Timezone": "Europe/Paris (UTC+02:00)"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4",
+          "mode": "list",
+          "cachedResultName": "Offres emplois n8n",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Base des offres",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Ayl5KUiHmE241UfiGZ5CfeISXIoq6Ya4pkro89TT4d4/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Com mail",
+              "lookupValue": "Non envoyé"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -608,
+        1248
+      ],
+      "id": "13cb4159-2de9-4f4b-821b-32632a646c29",
+      "name": "Get row(s) in sheet3",
+      "executeOnce": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "kplIavU6Ix016UIY",
+          "name": "Google Sheets account Louis"
         }
       }
-    ]
-  },
+    }
+  ],
   "connections": {
     "Append or update row in sheet1": {
       "main": [
@@ -1305,33 +1316,6 @@
         ]
       ]
     },
-    "Get row(s) in sheet3": {
-      "main": [
-        [
-          {
-            "node": "Aggregate",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Update row in sheet",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Aggregate": {
-      "main": [
-        [
-          {
-            "node": "Send a message1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "When Executed by Another Workflow": {
       "main": [
         [
@@ -1343,21 +1327,64 @@
         ]
       ]
     },
-    "Send a message1": {
+    "Sort": {
       "main": [
-        []
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet3": {
+      "main": [
+        [
+          {
+            "node": "Sort",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1"
+  "pinData": {
+    "Schedule Trigger": [
+      {
+        "timestamp": "2025-10-16T07:00:45.055+02:00",
+        "Readable date": "October 16th 2025, 7:00:45 am",
+        "Readable time": "7:00:45 am",
+        "Day of week": "Thursday",
+        "Year": "2025",
+        "Month": "October",
+        "Day of month": "16",
+        "Hour": "07",
+        "Minute": "00",
+        "Second": "45",
+        "Timezone": "Europe/Paris (UTC+02:00)"
+      }
+    ]
   },
-  "versionId": "5e65aa52-fc93-4e4a-bd18-c04f640d57d3",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "dca66bfe20538326afcf0ea9818c4e437640a050446b589da002699d11b2eea7"
-  },
-  "id": "ASPeDfPFDgXLvGwH",
-  "tags": []
+  }
 }
