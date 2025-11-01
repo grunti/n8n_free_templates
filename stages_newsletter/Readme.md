@@ -52,7 +52,8 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 🔗 **Liens utiles :**
 
-🧞‍♂️ **20 % de réduction Hostinger** → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
+🧞‍♂️ **20 % de réduction Hostinger pour héberger n8n** → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
+💻 **Apprends comment héberger n8n gratuitement → [https://youtu.be/pFLgxJZv4gA](https://youtu.be/pFLgxJZv4gA)
 ✨ **Essaie n8n gratuitement** → [https://n8n.partnerlinks.io/cm1t54p7lwdw](https://n8n.partnerlinks.io/cm1t54p7lwdw)  
 💬 **Telegram (aide + newsletter)** → [https://t.me/+pfPxNZdQj_9jYjU0](https://t.me/+pfPxNZdQj_9jYjU0)  
 👔 **Call / Agence IA** → [https://agence-alain.fr](https://agence-alain.fr)
