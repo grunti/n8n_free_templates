@@ -1,51 +1,64 @@
-## Template n8n : Notification Quotidienne des Dernières Offres d'Emploi Ciblées 🛜
+# Template n8n : Notification Quotidienne des Dernières Offres d'Emploi Ciblées 🛜
 
-🌟 **Aperçu** : Ne manquez plus jamais une offre d'emploi ! Ce workflow n8n automatise la collecte quotidienne d'offres d'emploi sur LinkedIn, Indeed, Welcome to the Jungle et d'autres plateformes, en utilisant Google Dorks et SerpAPI. Il filtre les offres avec un agent IA Gemini, les stocke dans Google Sheets et envoie une newsletter HTML élégante directement dans votre boîte mail ou à vos abonnés — le tout gérable depuis votre téléphone !
-
-**💼 Cas d'Usage** :
-- Étudiants en quête de stages en fusion-acquisition (M&A), évaluation ou services de transaction (6+ mois).
-- Personnes en reconversion professionnelle souhaitant des alertes d'offres d'emploi automatisées et personnalisées.
-- Créateurs de contenu développant une newsletter d'offres d'emploi pour monétiser leur audience.
-
-**⚙️ Fonctionnement** :
-1. **Collecte** : Utilise SerpAPI avec un Google Dork personnalisé pour récupérer quotidiennement les dernières offres d'emploi sur les principales plateformes.
-2. **Filtrage** : Un agent IA Gemini valide les offres pour s'assurer qu'elles correspondent aux critères de la finance d'entreprise.
-3. **Stockage** : Enregistre les nouvelles offres dans Google Sheets en marquant les doublons pour éviter le spam.
-4. **Notification** : Génère une notification par e-mail/newsletter et l'envoie via Outlook.
-
-**🛠️ Instructions de Configuration** :
-- Importez le workflow JSON dans n8n.
-- Ajoutez les identifiants : SerpAPI (clé API), Google Sheets (OAuth2), Microsoft Outlook (OAuth2).
-- Personnalisez le Google Dork dans le nœud "Edit Fields" pour des critères d'emploi spécifiques.
-- Planifiez l'exécution quotidienne à 7h. Testez et ajustez la requête IA pour plus de précision.
-
-**🔑 Identifiants et Nœuds Requis** :
-- **Identifiants** : SerpAPI, Google Sheets OAuth2, Microsoft Outlook OAuth2.
-- **Nœuds** : Déclencheur de planification, Requête HTTP, Google Sheets, Agent IA (Gemini), Microsoft Outlook.
-
-🔗 **Créateur** : Louis Delahaye | [n8n.io/creators/louisdl](https://n8n.io/creators/louisdl/)
-🎥 YouTube : [@cash-routine](https://www.youtube.com/@cash-routine)
-Mon Agence IA : [agence-alain.fr](https://agence-alain.fr)
-
---- 
-
-## Tu ne possèdes pas n8n ? Tu ne veux pas t'embêter avec le workflow 
-### **S’abonner à la Newsletter Live (€9,99/mois – 1 semaine GRATUITE)**  
-**Zéro config** – reçois **chaque matin** les meilleures offres filtrées par IA.  
-👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)  
+**Ce workflow est configuré par défaut pour les stages en finance d’entreprise (M&A, évaluation, services de transaction, 6+ mois).**  
+Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le nœud *Edit Fields*) et, si besoin, les sites scrapés dans la requête SerpAPI.
 
 ---
 
-### **Voir la Démo Complète sur YouTube**  
-👉 [https://youtu.be/dMFFVp0DcII](https://youtu.be/dMFFVp0DcII)  
+⚙️ **Fonctionnement :**
 
+- **Collecte** : SerpAPI + Google Dork personnalisé → offres publiées dans les 24h sur LinkedIn, Indeed, Welcome to the Jungle, etc.  
+- **Filtrage** : Agent IA Gemini valide la pertinence (« Oui/Non »).  
+- **Stockage** : Google Sheets avec dédoublonnage automatique.  
+- **Notification** : Envoi d’un e-mail via Outlook.  
+
+> **Note** : L’e-mail généré est fonctionnel mais **basique** (pas de mise en page avancée).  
+> Pour un **beau template HTML responsive + dark mode**, passez à la version premium → **+4,99 €** (et soutenez le projet !)  
+> 👉 [https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers](https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers)
+
+---
+
+🛠️ **Instructions de Configuration :**
+
+1. Importez le JSON dans n8n.  
+2. Ajoutez vos identifiants :  
+   - SerpAPI (clé API)  
+   - Google Sheets (OAuth2)  
+   - Microsoft Outlook (OAuth2)  
+3. Modifiez le **Google Dork** si besoin.  
+4. Planifiez à 7 h → testez → ajustez le prompt IA.  
+
+🔑 **Identifiants & Nœuds requis :**  
+- **Identifiants** : SerpAPI, Google Sheets OAuth2, Microsoft Outlook OAuth2.  
+- **Nœuds** : Schedule Trigger, HTTP Request, Google Sheets, AI Agent (Gemini), Microsoft Outlook.
+
+---
+
+🎥 **Tuto complet du template** → [https://youtu.be/dMFFVp0DcII](https://youtu.be/dMFFVp0DcII)  
 *(Abonne-toi + 🔔 pour les prochaines automatisations IA !)*
 
 ---
+
+### Tu ne veux pas t’embêter avec n8n ?  
+**S’abonne à la Newsletter Live** (€9,99/mois – **1 semaine GRATUITE**)  
+Zéro config → offres filtrées chaque matin.  
+👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)
+
+---
+
+🔗 **Liens utiles :**
+
+🧞‍♂️ **20 % de réduction Hostinger** → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
+✨ **Essaie n8n gratuitement** → [https://n8n.partnerlinks.io/cm1t54p7lwdw](https://n8n.partnerlinks.io/cm1t54p7lwdw)  
+💬 **Telegram (aide + newsletter)** → [https://t.me/+pfPxNZdQj_9jYjU0](https://t.me/+pfPxNZdQj_9jYjU0)  
+👔 **Call / Agence IA** → [https://agence-alain.fr](https://agence-alain.fr)
+
+---
+
+**Créateur** : Louis Delahaye | n8n.io/creators/louisdl  
+YouTube : [@cash-routine](https://www.youtube.com/@cash-routine)
 
 **Prochaines étapes :**  
 1. Choisis **Workflow** OU **Newsletter** (ou les deux !)  
 2. Reçois tes offres dès demain matin  
 3. **Postule en premier, décroche le stage de tes rêves** 💼✨
-
-*Questions ? Telegram :* [t.me/+pfPxNZdQj_9jYjU0](https://t.me/+pfPxNZdQj_9jYjU0)
