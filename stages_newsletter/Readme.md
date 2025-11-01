@@ -5,14 +5,19 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 ---
 
-## 🚀 **Pas envie de t’embêter avec n8n ?**  
-- **Tu ne souhaites pas payer ou tu ne maîtrises pas l’outil ?**  
-  → **Abonne-toi à ma newsletter live « Stages Finance »** : **€9,99 / mois** (1 semaine **gratuite**)  
-  👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)
+## 🚀 **Pas envie de t’embêter avec n8n ? Choisis ton niveau :**
 
-- **Tu veux la même newsletter, mais 100 % sur-mesure pour ton cas perso ?**  
-  → **Je la développe pour toi** : **€39,99 / mois** (1 semaine **gratuite**)
-  👉 [https://cashroutine.gumroad.com/l/internship-alert]([https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert?option=EZ863YfdUxjzZcbFtp89RQ%3D%3D))
+| Option | Prix | Ce que tu reçois |
+| --- | --- | --- |
+| **Template adapté Corporate Finance (gratuit)** | 0 € | Workflow n8n fonctionnel (mail simple) – **à télécharger directement via le Gumroad du produit principal** |
+| **Template adapté Corporate Finance + beau mail HTML** | **~~9.99€~~ 4,99 €** (promo valide 10 jours) | Newsletter pro, beau format responsive et adapté au dark mode (pour me soutenir 🙂) |
+| **Newsletter live « Stages Corporate Finance »** | 9,99 €/mois (1 sem gratuite) | Offres filtrées chaque matin, zéro config |
+| **Newsletter 100 % sur-mesure** | 39,99 €/mois (1 sem gratuite) | Critères ultra-précis (ville, durée, entreprise…) – je la développe pour toi |
+
+👉 **Achat & liens :**  
+- Template gratuit / premium → via le Gumroad du produit principal ou [ici pour le beau mail](https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers)  
+- Newsletter live → [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)  
+- Sur-mesure → contacte-moi sur Telegram ou cashflows.routine@gmail.com
 
 ---
 
@@ -23,9 +28,7 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 - **Stockage** : Google Sheets avec dédoublonnage automatique.  
 - **Notification** : Envoi d’un e-mail via Outlook.  
 
-> **Note** : L’e-mail généré est fonctionnel mais **basique** (pas de mise en page avancée).  
-> Pour un **beau template HTML responsive + dark mode**, passe à la version premium → **+4,99 €** (et soutenez le projet !)  
-> 👉 [https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers](https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers)
+> **Note** : L’e-mail du template gratuit est fonctionnel mais **basique**. La version **+4,99 €** inclut le **beau template HTML responsive + dark mode**.
 
 ---
 
@@ -52,8 +55,8 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 🔗 **Liens utiles :**
 
-🧞‍♂️ **20 % de réduction Hostinger pour héberger n8n** → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
-💻 **Apprends comment héberger n8n gratuitement → [https://youtu.be/pFLgxJZv4gA](https://youtu.be/pFLgxJZv4gA)
+🧞‍♂️ **20 % de réduction Hostinger** pour héberger n8n → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
+💻 **Apprends comment héberger n8n gratuitement** → [https://youtu.be/pFLgxJZv4gA](https://youtu.be/pFLgxJZv4gA)  
 ✨ **Essaie n8n gratuitement** → [https://n8n.partnerlinks.io/cm1t54p7lwdw](https://n8n.partnerlinks.io/cm1t54p7lwdw)  
 💬 **Telegram (aide + newsletter)** → [https://t.me/+pfPxNZdQj_9jYjU0](https://t.me/+pfPxNZdQj_9jYjU0)  
 👔 **Call / Agence IA** → [https://agence-alain.fr](https://agence-alain.fr)
