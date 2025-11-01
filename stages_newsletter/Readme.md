@@ -5,6 +5,17 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 ---
 
+## 🚀 **Pas envie de t’embêter avec n8n ?**  
+- **Tu ne souhaites pas payer ou tu ne maîtrises pas l’outil ?**  
+  → **Abonne-toi à ma newsletter live « Stages Finance »** : **€9,99 / mois** (1 semaine **GRATUITE**)  
+  👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)
+
+- **Tu veux la même newsletter, mais 100 % sur-mesure pour ton cas perso ?**  
+  → **Je la développe pour toi** : **€39,99 / mois** (1 semaine **GRATUITE**)  
+  *Contacte-moi sur Telegram ou par mail → cashflows.routine@gmail.com*
+
+---
+
 ⚙️ **Fonctionnement :**
 
 - **Collecte** : SerpAPI + Google Dork personnalisé → offres publiées dans les 24h sur LinkedIn, Indeed, Welcome to the Jungle, etc.  
@@ -13,7 +24,7 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 - **Notification** : Envoi d’un e-mail via Outlook.  
 
 > **Note** : L’e-mail généré est fonctionnel mais **basique** (pas de mise en page avancée).  
-> Pour un **beau template HTML responsive + dark mode**, passez à la version premium → **+4,99 €** (et soutenez le projet !)  
+> Pour un **beau template HTML responsive + dark mode**, passe à la version premium → **+4,99 €** (et soutenez le projet !)  
 > 👉 [https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers](https://cashroutine.gumroad.com/p/50-off-for-the-template-daily-notification-on-latest-job-offers)
 
 ---
@@ -39,13 +50,6 @@ Pour cibler un autre domaine → modifiez simplement le **Google Dork** (dans le
 
 ---
 
-### Tu ne veux pas t’embêter avec n8n ?  
-**S’abonne à la Newsletter Live** (€9,99/mois – **1 semaine GRATUITE**)  
-Zéro config → offres filtrées chaque matin.  
-👉 [https://cashroutine.gumroad.com/l/internship-alert](https://cashroutine.gumroad.com/l/internship-alert)
-
----
-
 🔗 **Liens utiles :**
 
 🧞‍♂️ **20 % de réduction Hostinger** → [https://hostinger.fr/?REFERRALCODE=CASHROUTINE](https://hostinger.fr/?REFERRALCODE=CASHROUTINE)  
@@ -59,6 +63,6 @@ Zéro config → offres filtrées chaque matin.
 YouTube : [@cash-routine](https://www.youtube.com/@cash-routine)
 
 **Prochaines étapes :**  
-1. Choisis **Workflow** OU **Newsletter** (ou les deux !)  
+1. Choisis **Workflow**, **Newsletter standard** ou **sur-mesure**  
 2. Reçois tes offres dès demain matin  
 3. **Postule en premier, décroche le stage de tes rêves** 💼✨
